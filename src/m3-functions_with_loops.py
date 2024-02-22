@@ -17,9 +17,17 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def ingredient_search(ingredient, list):
+   for item in list:
+      if item == ingredient:
+         return True
+   return False
+print(ingredient_search("salt", ["apple","juice","orange"]))
+print(ingredient_search("juice", ["apple","juice","orange"]))
+
 
 ###############################################################################
-# TODO: 1. (3 pts)
+# DONE: 1. (3 pts)
 #   
 #   For this _TODO_, write a function called triangle() that takes one parameter:
 #       - size  <- int
@@ -52,3 +60,7 @@
 #   
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def triangle(size):
+   for y in range(size):
+    print (y*"*")
+triangle(10)
